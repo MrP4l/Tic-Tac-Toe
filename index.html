@@ -14,7 +14,6 @@
             <header id="header">Tic Tac Toe</header>
             <div id="contentContainer">
                 <div id="againstContainer">
-                    <div>vs player</div>
                     <div>vs ai</div>
                 </div>
                 <div id="statContainer"> 
@@ -23,6 +22,9 @@
                         <div>won</div>
                         <div>lost</div>
                         <div>draw</div>
+                    </div>
+                    <div id="restartContainer">
+                        <div>Restart the game</div>
                     </div>
                     <div id="playerTwoContainer">
                         <div>player/ai 2</div>
@@ -33,13 +35,34 @@
                 </div>
                 
                 <div id="turnContainer">
-                    <div>player * turn</div>
+                    <div class="formElement">
+                        <label for="playerOneName">Player 1:</label>
+                        <input type="text" id="playerOneName" placeholder="Insert your name" name="Player 1 name">
+                    </div>
+                    <div id="playButton">Play</div>
+                    <div class="formElement">
+                        <label for="playerTwoName">Player 2:</label>
+                        <input type="text" id="playerTwoName" placeholder="Insert your name" name="Player 2 name">
+                    </div>
                 </div>
                 <div id="gameContainer">
-                    <div id="game">game</div>
-                </div>
-
-                    
+                    <div id="game">
+                        <div id="firstRow">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+                        <div id="secondRow">
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                        </div>
+                        <div id="thirdRow">
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                        </div>
+                    </div>
                 </div>
               
             </div>
