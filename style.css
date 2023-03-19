@@ -66,7 +66,7 @@
     margin: 5px;
 }
 
-#turnContainer {
+#playersContainer {
     border: solid brown;
     display: flex;
     flex-wrap: wrap;
@@ -74,10 +74,25 @@
     overflow: scroll;
 }
 
-#turnContainer > div{
+#playersContainer > div{
     border: solid rgb(6, 3, 3);
     margin: 5px;
     font-size: 20px;
+}
+
+label {
+    margin-right: 20px;
+    margin: 10px;
+}
+
+input {
+    width: 15vw;
+    height: 2vh;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 1.6vh;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 #gameContainer {
@@ -109,12 +124,12 @@
 
 #game > div {
     display: flex;
-    background-color: aqua;
+    background-color: rgb(0, 100, 100);
     width: 100%;
 }
 
 #game > div > div {
-    border: solid red;
+    border: solid rgb(225, 255, 0);
     display: flex;
     width: 33%;
     text-align: center;
