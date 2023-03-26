@@ -4,13 +4,6 @@
     font-family: "Inter var",ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-weight: lighter;
     color: white;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-body {
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar {
@@ -23,8 +16,6 @@ body {
     overflow: scroll;
     height: 100vh;
     background-color: rgb(18, 36, 58);
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 #header {
@@ -33,11 +24,6 @@ body {
     width: 100%;
     background-color: rgb(18, 36, 58);
     box-shadow: 0 10px 15px -3px rgba(2, 2, 2, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-}
-
-#header > div {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #titleContainer {
@@ -57,7 +43,6 @@ body {
 #contentContainer {
     height: 100%;
     width: 100%;
-    overflow: scroll;
 }
 
 #statContainer {
