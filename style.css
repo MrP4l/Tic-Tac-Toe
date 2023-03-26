@@ -10,6 +10,10 @@
     display: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #mainContainer {
     display: flex;
     flex-wrap: wrap;
