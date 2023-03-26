@@ -1,8 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Inter var",ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-weight: lighter;
+    color: white;
 }
 
 ::-webkit-scrollbar {
@@ -12,81 +13,99 @@
 #mainContainer {
     display: flex;
     flex-wrap: wrap;
-    border: solid red;
     overflow: scroll;
     height: 100vh;
+    background-color: rgb(18, 36, 58);
 }
 
 #header {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: fit-content;
+    background-color: rgb(18, 36, 58);
+    box-shadow: 0 10px 15px -3px rgba(2, 2, 2, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+#header > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titleContainer {
+    width: 100%;
+    display: flex;
+}
+
+#titleContainer > div {
+    color: white;
+    width: 100%;
     font-size: 55px;
-    text-align: center;
-    border: solid;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 #contentContainer {
     height: 100%;
-    border: solid green;
     width: 100%;
     overflow: scroll;
 }
 
-#againstContainer {
-    border: solid;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 20px;
-}
-
-#againstContainer > div {
-    border: solid;
-    padding: 3px;
-}
-
 #statContainer {
     display: flex;
-    border: solid yellow;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 2vh;
 }
 
 #statContainer > div{
     display: flex;
-    border: solid rgb(44, 0, 177);
     flex-wrap: wrap;
+    justify-content: center;
+    width: clamp(100px, 8%,200px);
+    padding: 5px;
+    margin-bottom: 0.5vh;
+    border: solid rgba(255, 251, 251, 0.367) 1px;
+    border-radius: 10px;
+    background-color: #111827;
+    box-shadow: 0 10px 15px -3px rgba(2, 2, 2, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
 }
 
 #statContainer > div > div{
     display: flex;
-    border: solid rgb(122, 46, 46);
     flex-wrap: wrap;
-    margin: 5px;
+    justify-content: center;
+    width: 100%;
 }
 
 #playersContainer {
-    border: solid brown;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow: scroll;
+    margin-top: clamp(10px, 2vh, 100px);
+    background-color: #111827;
 }
 
 #playersContainer > div{
-    border: solid rgb(6, 3, 3);
-    margin: 5px;
+    margin: 1.4vh;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formElement {
+    width: clamp(300px, 30vw, 600px);
 }
 
 label {
-    margin-right: 20px;
-    margin: 10px;
+    margin-right: 1vh;
 }
 
 input {
-    width: 15vw;
+    width: 20vw;
+    width: clamp(150px, 20vw, 400px);
     height: 2vh;
     border: 1px solid;
     border-radius: 5px;
@@ -95,53 +114,140 @@ input {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-#gameContainer {
-    display: flex;
-    flex-wrap: wrap;
-    border: solid slateblue;
-    height: 100%;
-    overflow: scroll;
+#playButton {
+    border: solid rgba(203,213,225,.1) 1px;
+    border-radius: 10px;
+    height: 4vh;
+    width: clamp(80px, 5%,200px);
+    background-color: #1e293b;
 }
 
-#gameContainer {
+#playButton:hover {
+    box-shadow: 0 10px 15px -3px rgba(158, 158, 158, 0.1), 0 4px 6px -4px rgba(175, 175, 175, 0.1);
+}
+
+#wydContainer {
     display: flex;
-    flex-wrap: wrap;
-    border: solid paleturquoise;
-    overflow: scroll;
     justify-content: center;
-    border: solid;
+    margin-top: 2vh;
+    font-size: larger;
 }
 
-/*Adjust the height and width with minmax*/
+#wydContainer > div {
+    border: solid;
+    padding: 10px;
+    border: solid rgba(203,213,225,.1) 1px;
+    border-radius: 10px;
+}
+
+#gameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-top: clamp(5px, 3vh, 80px);
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+}
+
 #game {
     display: flex;
     flex-wrap: wrap;
-    border: solid;
-    margin-top: 4vw;
     width: 500px;
     height: 500px;
 }
 
 #game > div {
     display: flex;
-    background-color: rgb(0, 100, 100);
     width: 100%;
+    height: calc(100% / 3);
 }
 
 #game > div > div {
-    border: solid rgb(225, 255, 0);
     display: flex;
-    width: 33%;
-    text-align: center;
+    width: calc(100% / 3);
     align-items: center;
     justify-content: center;
 }
 
-/*Adjust the overflows*/
+#firstRow > div:nth-child(1) {
+    border-bottom: solid #fde047;
+    border-right: solid #fde047;
+}
 
+#firstRow > div:nth-child(2) {
+    border-bottom: solid #fde047;
+    border-right: solid #fde047;
+}
 
+#firstRow > div:nth-child(3) {
+    border-bottom: solid #fde047;
+}
 
+#secondRow > div:nth-child(1) {
+    border-bottom: solid #fde047;
+    border-right: solid #fde047;
+}
 
+#secondRow > div:nth-child(2) {
+    border-bottom: solid #fde047;
+    border-right: solid #fde047;
+}
+
+#secondRow > div:nth-child(3) {
+    border-bottom: solid #fde047;
+}
+
+#thirdRow > div:nth-child(1) {
+    border-right: solid #fde047;
+}
+
+#thirdRow > div:nth-child(2) {
+    border-right: solid #fde047;
+}
+
+.cross {
+    width: 50%;
+    height: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+}
+
+.cross:after, .cross:before {
+    position: absolute; 
+    content: "";
+    background: #1d4ed8;
+    border:solid;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cross:after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    margin-top:-5px;
+}
+
+.cross:before {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 10px; 
+    margin-left:-5px;
+}
+
+.circle {
+    width: 40%;
+    height: 40%;
+    background: #16a34a;
+    border: 4px solid #000000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
 
 .footer {
     position: absolute;
