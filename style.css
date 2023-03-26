@@ -219,7 +219,7 @@ input {
     position: absolute; 
     content: "";
     background: #1d4ed8;
-    border:solid;
+    border:solid black;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
