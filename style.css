@@ -8,6 +8,11 @@
     -webkit-overflow-scrolling: touch;
 }
 
+body {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
