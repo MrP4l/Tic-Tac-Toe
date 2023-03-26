@@ -112,6 +112,7 @@ input {
     padding: 2px 10px;
     font-size: 1.6vh;
     font-family: "Lucida Console", "Courier New", monospace;
+    color: black;
 }
 
 #playButton {
