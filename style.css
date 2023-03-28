@@ -10,15 +10,12 @@
     display: none;
 }
 
-body {
-    overscroll-behavior: none;
-}
-
 #mainContainer {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(18, 36, 58);
-    height: 100vh;
+    min-height: 100vh;
+    border: solid red;
 }
 
 #header {
@@ -44,7 +41,7 @@ body {
 }
 
 #contentContainer {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
