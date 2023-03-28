@@ -213,7 +213,7 @@ input {
 .cross:after, .cross:before {
     position: absolute; 
     content: "";
-    background: #1d4ed8;
+    background: #172554;
     border:solid black;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -237,7 +237,7 @@ input {
 .circle {
     width: 60px;
     height: 60px;
-    background: #16a34a;
+    background: #111827;
     border: 4px solid #000000;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 100%;
